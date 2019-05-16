@@ -1,5 +1,9 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {MOCK_RECIPES} from './recipe/recipe.mock'
 
+/**
+ * @title Card with multiple sections
+ */
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +11,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'jarvis-angular-project';
+  listRecipes = MOCK_RECIPES;
 }
